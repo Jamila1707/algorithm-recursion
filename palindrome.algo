@@ -1,0 +1,10 @@
+FUNCTION  palindrome(T:ARRAY_OF INTEGER[6]) : BOOLEAN
+VAR
+    i,j: INTEGER
+BEGIN
+IF (i>=j) THEN
+    RETURN True;
+ELSE
+    RETURN (mot [i]=mot[j], palindrome(mot, i+1, j-1))
+END_IF
+END
